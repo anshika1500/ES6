@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="main.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+
+
+
+  
+  <!-- main code begins -->
+<div class = "container-fluid heading">
+<h1> <center>Student Management Portal </center></h1><br>
+</div>
+<div class = "inp container-fluid form1">
+<form id = "form1">
+<input style = "height:40px; font-size:18pt; width:220px" type = "text" name = "name" placeholder = "Name" id="name">
+<input style = "height:40px; font-size:18pt; width:220px" type = "text" name = "rollno" placeholder = "Roll No." id = "rollno">
+<input style = "height:40px; font-size:18pt; width:220px" type = "text" name = "passout" placeholder = "PassOut Year" id = "passout">
+<input style = "height:40px; font-size:18pt; width:220px" type = "text" name = "stream" placeholder = "Stream" id = "stream"><br><br><br>
+<input type = "button" name = "ADD" value="Add" onclick="add()" id = "but">
+<input type = "button" name = "DELETE" value="DELETE" onclick="remove1()" id = "but1">
+<input type = "button" name = "EDIT" value="EDIT" onclick="editDetails()" id = "but2">
+<input type = "button" name = "UPDATE" value="UPDATE" onclick="updateTable()" id = "but3">
+<br><br><br><br>
+</form>
+</div>
+<div class = "container-fluid table1">
+<table id = "table1" align="center" class=" table table-striped">
+<tr>
+<th> NAME </th>
+<th> ROLL NO </th>
+<th> PASSOUT YEAR </th>
+<th> STREAM </th>
+<th> SELECT </th>
+</tr>
+</table>
+</div>
+<div class="container">
+<div class="alert alert-warning">
+<p id = "p1"><strong>Warning!</strong> This alert box could indicate a warning that might need attention.</p>
+</div>
+</div>
+</div>
+</body>
+</html>
